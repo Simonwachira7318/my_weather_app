@@ -43,14 +43,14 @@ class _WeatherPageState extends State<WeatherPage> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Column(
         children: [
           // city name
-          Text(_weather?.cityName ?? "loading your city..."),
+          Text(_weather?.cityName ?? "loading city name..."),
 
           // temperature
-          Text('${_weather?.temperature.round()}°C')
+          Text('${_weather?.temperature.round()}°C'),
         ],
       ),
     );
